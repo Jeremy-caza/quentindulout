@@ -3,22 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quentin Dulout Courtages — Courtier en assurances</title>
-  <meta name="description" content="Courtier en assurances indépendant. Solutions claires et adaptées pour particuliers et professionnels, accompagnement humain, du conseil à la mise en place." />
 
-  <!-- Open Graph (basic) -->
-  <meta property="og:title" content="Quentin Dulout Courtages — Courtier en assurances" />
-  <meta property="og:description" content="Particuliers & professionnels : emprunteur, RC Pro, décennale, santé & prévoyance." />
+  <title>Quentin Dulout Courtages | Courtier en assurances à Tarbes</title>
+  <meta name="description" content="Courtier en assurances à Tarbes. Particuliers et professionnels. Assurance emprunteur, santé, prévoyance, auto, habitation, RC Pro, décennale, multirisque. Conseil clair et accompagnement humain." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0e3a5a" />
+  <link rel="canonical" href="TON_URL_CANONIQUE" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Quentin Dulout Courtages | Courtier en assurances à Tarbes" />
+  <meta property="og:description" content="Courtier en assurances à Tarbes. Particuliers et professionnels. Conseil clair et accompagnement humain." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="TON_URL_CANONIQUE" />
+  <meta property="og:image" content="TON_URL_OG_IMAGE" />
 
-  <!-- Favicons (placeholders) -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Quentin Dulout Courtages | Courtier en assurances à Tarbes" />
+  <meta name="twitter:description" content="Courtier en assurances à Tarbes. Particuliers et professionnels. Conseil clair et accompagnement humain." />
+  <meta name="twitter:image" content="TON_URL_OG_IMAGE" />
+
+  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0e3a5a">
+  <meta name="application-name" content="Quentin Dulout Courtages">
+
+  <!-- Local SEO -->
+  <meta name="geo.region" content="FR-65" />
+  <meta name="geo.placename" content="Tarbes" />
 
   <script type="application/ld+json">
   {
@@ -26,16 +44,22 @@
     "@type": "InsuranceAgency",
     "name": "Quentin Dulout Courtages",
     "telephone": "+33672491064",
-    "email": "[À RENSEIGNER]",
+    "email": "TON_EMAIL",
+    "url": "TON_URL_CANONIQUE",
+    "image": "TON_URL_OG_IMAGE",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "[À RENSEIGNER]",
-      "addressLocality": "[À RENSEIGNER]",
-      "postalCode": "[À RENSEIGNER]",
+      "streetAddress": "ADRESSE_A_COMPLETER",
+      "addressLocality": "Tarbes",
+      "postalCode": "65000",
       "addressCountry": "FR"
     },
-    "areaServed": "[ZONE D’INTERVENTION]",
-    "url": "[URL DU SITE]"
+    "areaServed": [
+      "Tarbes",
+      "Hautes Pyrénées",
+      "Occitanie"
+    ],
+    "description": "Courtier en assurances à Tarbes pour particuliers et professionnels. Assurance emprunteur, santé, prévoyance, auto, habitation, RC Pro, décennale, multirisque."
   }
   </script>
 
@@ -43,34 +67,21 @@
     :root{
       --bg:#f7fbff; --surface:#ffffff; --ink:#0b1623; --muted:#455468; --muted2:#6b7a90;
       --line:rgba(11,22,35,.10);
-
-      --brand:#0e3a5a; --brand2:#0b2d45; --accent:#c7f255;
-      --btnInk:#ffffff;
-
-      --headerBg:rgba(255,255,255,.86);
-      --panelBg:rgba(255,255,255,.92);
-
+      --brand:#0e3a5a; --brand2:#0b2d45; --accent:#c7f255; --btnInk:#ffffff;
+      --headerBg:rgba(255,255,255,.86); --panelBg:rgba(255,255,255,.92);
       --shadow:0 18px 45px rgba(15, 35, 55, .10);
       --shadow2:0 10px 24px rgba(15, 35, 55, .10);
-
-      --radius:16px; --radius2:22px;
-      --max:1120px;
+      --radius:16px; --radius2:22px; --max:1120px;
       --serif: ui-serif, Georgia, "Times New Roman", Times, serif;
       --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
       --focus: 0 0 0 3px rgba(199,242,85,.45), 0 0 0 6px rgba(14,58,90,.18);
     }
 
-    /* Mode PRO : page sombre */
     body[data-theme="pro"]{
       --bg:#0b1220; --surface:#0f1b2c; --ink:#eef4ff; --muted:#c8d6ea; --muted2:#9fb2cc;
       --line:rgba(255,255,255,.12);
-
-      --brand:#c7f255; --brand2:#b9ea5a; --accent:#c7f255;
-      --btnInk:#0b1623;
-
-      --headerBg:rgba(10,16,26,.72);
-      --panelBg:rgba(10,16,26,.86);
-
+      --brand:#c7f255; --brand2:#b9ea5a; --accent:#c7f255; --btnInk:#0b1623;
+      --headerBg:rgba(10,16,26,.72); --panelBg:rgba(10,16,26,.86);
       --shadow:0 18px 45px rgba(0, 0, 0, .32);
       --shadow2:0 10px 24px rgba(0, 0, 0, .28);
     }
@@ -79,7 +90,6 @@
     html{scroll-behavior:smooth}
     body{margin:0;font-family:var(--sans);color:var(--ink);background:linear-gradient(180deg, rgba(245,251,255,1), rgba(255,255,255,1) 55%, rgba(247,251,255,1))}
     body[data-theme="pro"]{background:radial-gradient(1100px 640px at 20% 0%, rgba(199,242,85,.10), transparent 60%), radial-gradient(1000px 700px at 80% 10%, rgba(14,58,90,.18), transparent 60%), linear-gradient(180deg, #070c16, #0b1220 65%, #070c16)}
-
     a{color:inherit}
     img{max-width:100%;display:block}
     .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
@@ -119,23 +129,22 @@
     .burger span{display:block;width:22px;height:2px;background:rgba(11,22,35,.70);margin:5px 0;border-radius:999px}
     body[data-theme="pro"] .burger span{background:rgba(238,244,255,.78)}
 
-    /* Toggle segment dans le header (toujours visible) */
     .segHeader{display:inline-flex;gap:8px;background:rgba(11,22,35,.04);border:1px solid var(--line);border-radius:999px;padding:6px;align-items:center}
     body[data-theme="pro"] .segHeader{background:rgba(255,255,255,.05)}
-
     .segBtn{border:0;background:transparent;padding:10px 14px;border-radius:999px;font-weight:750;cursor:pointer;color:var(--muted);line-height:1;white-space:nowrap}
     .segBtn[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow2);border:1px solid var(--line)}
     body[data-theme="pro"] .segBtn[aria-pressed="true"]{background:rgba(255,255,255,.08)}
-
     .segFull{display:inline}
     .segShort{display:none}
-
     .headerActions{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+
+    /* IMPORTANT : cache le menu mobile en desktop */
+    .mobilePanel{display:none}
+    .mobilePanel.open{display:block}
 
     /* Hero */
     .hero{padding:34px 0 30px}
     .heroGrid{display:grid;grid-template-columns:1fr 1.2fr;gap:26px;align-items:center}
-
     .photo{border-radius:var(--radius2);background:linear-gradient(140deg, rgba(14,58,90,.12), rgba(199,242,85,.18));border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;min-height:420px}
     body[data-theme="pro"] .photo{background:linear-gradient(140deg, rgba(14,58,90,.22), rgba(199,242,85,.10))}
     .photo:before{content:"";position:absolute;inset:0;background:radial-gradient(680px 380px at 20% 20%, rgba(199,242,85,.40), transparent 60%), radial-gradient(700px 440px at 70% 30%, rgba(14,58,90,.26), transparent 62%)}
@@ -145,10 +154,8 @@
     .kicker{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px}
     .dot{width:8px;height:8px;border-radius:999px;background:rgba(14,58,90,.75)}
     body[data-theme="pro"] .dot{background:rgba(199,242,85,.75)}
-
     h1{font-family:var(--serif);font-weight:800;letter-spacing:-.6px;line-height:1.06;font-size:54px;margin:10px 0 10px}
     .lead{font-size:18px;color:var(--muted);line-height:1.6;margin:0 0 18px;max-width:58ch}
-
     .heroCta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:10px}
 
     /* Sections */
@@ -157,19 +164,14 @@
     .sectionIntro{color:var(--muted);line-height:1.7;margin:10px auto 0;max-width:72ch}
     .center{text-align:center}
 
-    /* Services (image + list) */
+    /* Services */
     .servicesGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:stretch;margin-top:34px}
-
-    /* ↓ réduit sur desktop */
     .svcImg{border-radius:var(--radius2);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:linear-gradient(120deg, rgba(14,58,90,.10), rgba(255,255,255,.9));min-height:360px;position:relative}
     body[data-theme="pro"] .svcImg{background:linear-gradient(120deg, rgba(14,58,90,.20), rgba(15,27,44,.85))}
-
     .svcImg:before{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 20% 20%, rgba(199,242,85,.32), transparent 60%), radial-gradient(780px 520px at 70% 50%, rgba(14,58,90,.22), transparent 62%)}
     body[data-theme="pro"] .svcImg:before{background:radial-gradient(700px 380px at 20% 20%, rgba(199,242,85,.14), transparent 60%), radial-gradient(780px 520px at 70% 50%, rgba(14,58,90,.18), transparent 62%)}
-
     .svcImg .tag{position:absolute;left:18px;top:18px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:9px 12px;font-size:13px;color:var(--muted);box-shadow:var(--shadow2)}
     .svcPhoto{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center}
-
     .svcList{display:flex;flex-direction:column;gap:16px}
     .svcItem{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 18px;box-shadow:var(--shadow2);transition:transform .18s ease, box-shadow .18s ease}
     .svcItem:hover{transform:translateY(-2px)}
@@ -186,9 +188,11 @@
     .aboutGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;margin-top:34px}
     .aboutBox{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow2)}
     .aboutBox p{margin:0 0 12px;color:var(--muted);line-height:1.8}
-
-    /* ↓ réduit légèrement la photo "à propos" sur desktop sans toucher le hero */
     .aboutGrid .photo{min-height:380px}
+
+    .oriasBadge{margin-top:14px;display:flex;align-items:center;gap:12px}
+    .oriasImg{width:min(280px,100%);height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;padding:10px;box-shadow:var(--shadow2)}
+    body[data-theme="pro"] .oriasImg{border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.92)}
 
     /* Testimonials */
     .testiWrap{max-width:1100px;margin:34px auto 0}
@@ -199,13 +203,11 @@
     .avatar{width:36px;height:36px;border-radius:999px;background:linear-gradient(135deg, rgba(14,58,90,.18), rgba(199,242,85,.32));border:1px solid var(--line);flex:0 0 auto}
     .who b{display:inline-flex;align-items:center;gap:6px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .verified{width:14px;height:14px;flex:0 0 auto}
-
     .testiRight{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex:0 0 auto}
     .gBadge{width:20px;height:20px;object-fit:contain;opacity:.95}
     .stars{display:flex;gap:3px;align-items:center}
     .stars svg{width:16px;height:16px;fill:#f4b400}
     .testi p{margin:12px 0 0;color:var(--muted);line-height:1.65}
-
     .note{display:inline-flex;align-items:center;gap:10px;margin-top:12px;color:var(--muted);font-size:14px}
     .note b{font-family:var(--serif);font-size:24px;color:var(--ink)}
     .note span{color:var(--muted2)}
@@ -213,10 +215,16 @@
     .gLink:hover{opacity:.85}
     .note .stars svg{width:18px;height:18px}
 
+    /* Projet + Calendly */
+    .calCard{max-width:980px;margin:34px auto 0;background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:16px}
+    .calWrap{width:100%;height:760px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:rgba(11,22,35,.03)}
+    body[data-theme="pro"] .calWrap{background:rgba(255,255,255,.05)}
+    .calWrap iframe{width:100%;height:100%;border:0}
+    .calNote{margin:12px 6px 2px;color:var(--muted);line-height:1.7;text-align:center}
+
     /* Contact */
     .contact{background:linear-gradient(180deg, rgba(14,58,90,.94), rgba(11,22,35,.96));color:#fff}
     body[data-theme="pro"] .contact{background:linear-gradient(180deg, rgba(10,16,26,.96), rgba(7,12,22,.98))}
-
     .contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;margin-top:28px}
     .contactCard{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px}
     .contactCard h3{font-family:var(--serif);margin:0 0 10px;font-size:22px}
@@ -224,7 +232,6 @@
     .contactLine svg{width:18px;height:18px;flex:0 0 auto;opacity:.9;margin-top:2px}
     .contactLine a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(199,242,85,.55)}
     .contactLine a:hover{border-bottom-color:rgba(199,242,85,.95)}
-
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
     .btnLight{background:#fff;color:#0e3a5a;border:1px solid rgba(255,255,255,.18)}
     .btnLight:hover{background:rgba(255,255,255,.92)}
@@ -236,11 +243,11 @@
     .foot{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;color:rgba(255,255,255,.78)}
     .foot a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(199,242,85,.55)}
 
-    /* Floating WhatsApp (bouton blanc + logo vert en image) */
+    /* Floating WhatsApp */
     .waFloat{position:fixed;right:18px;bottom:18px;z-index:60}
     .waBtn{width:62px;height:62px;border-radius:999px;display:grid;place-items:center;background:#fff;box-shadow:0 18px 42px rgba(0,0,0,.22);border:2px solid rgba(11,22,35,.10);text-decoration:none}
     body[data-theme="pro"] .waBtn{border-color:rgba(255,255,255,.14)}
-    .waIcon{width:30px;height:30px;object-fit:contain}
+    .waIcon{width:38px;height:38px;object-fit:contain}
 
     /* Reveal */
     .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease, transform .7s ease}
@@ -259,6 +266,7 @@
       .aboutGrid{grid-template-columns:1fr}
       .testiGrid{grid-template-columns:repeat(2, minmax(0,1fr))}
       .contactGrid{grid-template-columns:1fr}
+      .calWrap{height:720px}
     }
     @media (max-width: 820px){
       .segHeader{transform:scale(.98)}
@@ -267,8 +275,6 @@
     @media (max-width: 760px){
       .nav{display:none}
       .burger{display:inline-block}
-
-      /* IMPORTANT : on enlève le bouton Contact du header sur mobile */
       .headerContact{display:none}
 
       .mobilePanel{display:none;position:absolute;left:0;right:0;top:78px;background:var(--panelBg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
@@ -282,18 +288,19 @@
       .cards{grid-template-columns:1fr}
       .testiGrid{grid-template-columns:1fr}
       .waBtn{width:58px;height:58px}
+      .waIcon{width:36px;height:36px}
 
-      /* Header compact + anti-débordement */
       .headerInner{gap:10px}
       .brandSub{display:none}
       .brandName{font-size:14px;max-width:150px}
       .brandLogo{width:20px;height:20px}
 
-      /* Toggle beaucoup plus petit + textes courts */
       .segHeader{padding:4px;gap:6px}
       .segBtn{padding:8px 9px;font-size:12px}
       .segFull{display:none}
       .segShort{display:inline}
+
+      .calWrap{height:760px}
     }
     @media (prefers-reduced-motion: reduce){
       html{scroll-behavior:auto}
@@ -302,25 +309,20 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Header -->
   <header class="header" aria-label="En-tête">
     <div class="wrap">
       <div class="headerInner">
         <a class="brand" href="#accueil" aria-label="Aller à l’accueil">
-          <span class="mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img" aria-label="Bouclier">
-              <path d="M12 2l8 4v6c0 5-3.4 9.7-8 10-4.6-.3-8-5-8-10V6l8-4zm0 2.2L6 7v5c0 4.1 2.7 7.9 6 8.8 3.3-.9 6-4.7 6-8.8V7l-6-2.8z" fill="rgba(14,58,90,.95)"/>
-            </svg>
-          </span>
 
           <span class="brandText">
             <span class="brandLine">
               <img class="brandLogo" src="images/logo.jpg" alt="Logo Quentin Dulout Courtages">
               <span class="brandName">Quentin Dulout <wbr> Courtages</span>
             </span>
-            <span class="brandSub">Courtier en assurances</span>
+            <span class="brandSub">Courtier en assurances à Tarbes</span>
           </span>
         </a>
 
@@ -331,19 +333,17 @@
         </nav>
 
         <div class="headerActions" aria-label="Actions">
-          <!-- Toggle toujours visible (desktop & mobile) -->
           <div class="segHeader" role="group" aria-label="Choisir votre profil">
             <button class="segBtn" id="segPart" type="button" aria-pressed="true">
               <span class="segFull">Je suis particulier</span>
               <span class="segShort">Particulier</span>
             </button>
             <button class="segBtn" id="segPro" type="button" aria-pressed="false">
-              <span class="segFull">Je suis Professionnelle</span>
+              <span class="segFull">Je suis professionnel</span>
               <span class="segShort">Pro</span>
             </button>
           </div>
 
-          <!-- desktop uniquement (caché en mobile via CSS) -->
           <a class="btn btnPrimary headerContact" href="#contact" aria-label="Aller à la section contact">Contact</a>
 
           <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobilePanel">
@@ -353,7 +353,6 @@
       </div>
     </div>
 
-    <!-- Mobile panel -->
     <div class="mobilePanel" id="mobilePanel" aria-label="Menu mobile">
       <div class="wrap">
         <a href="#services" data-close>Mes services</a>
@@ -366,7 +365,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <main id="accueil" class="hero" aria-label="Accueil">
     <div class="wrap">
       <div class="heroGrid">
@@ -375,37 +373,35 @@
         </div>
 
         <div class="reveal">
-          <div class="kicker"><span class="dot" aria-hidden="true"></span><span id="kicker">Particuliers & professionnels</span></div>
+          <div class="kicker"><span class="dot" aria-hidden="true"></span><span id="kicker">Particuliers et professionnels</span></div>
           <h1 id="heroTitle">Un courtier en assurances qui simplifie.</h1>
-          <p class="lead" id="heroLead">L’assurance, ça peut vite devenir compliqué… alors on le fait ensemble. On prend le temps de comprendre vos besoins, on compare les solutions, et on choisit celle qui vous protège vraiment au bon prix</p>
+          <p class="lead" id="heroLead">L’assurance peut vite devenir compliquée, alors on le fait ensemble. On prend le temps de comprendre vos besoins, on compare les solutions, et on choisit celle qui vous protège vraiment au bon prix.</p>
 
           <div class="heroCta">
-            <a class="btn btnPrimary" id="ctaHero" href="#contact">Prenons rendez-vous</a>
+            <a class="btn btnPrimary" id="ctaHero" href="#projet">Prendre rendez-vous</a>
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <!-- Services -->
   <section id="services" aria-label="Mes services">
     <div class="wrap">
       <div class="center reveal">
         <h2 class="sectionTitle">Mes services</h2>
-        <p class="sectionIntro" id="servicesIntro">Des garanties essentielles, adaptées à vos besoins, avec une mise en place simple et accompagnée.</p>
+        <p class="sectionIntro" id="servicesIntro">Des garanties utiles, adaptées à vos besoins, avec une mise en place simple et accompagnée.</p>
       </div>
 
       <div class="servicesGrid">
         <div class="svcImg reveal" aria-label="Illustration">
           <div class="tag" id="svcTag">Pour particuliers</div>
-          <img class="svcPhoto" src="images/services1.jpg" alt="Illustration de la section services">
+          <img class="svcPhoto" src="images/service.avif" alt="Illustration de la section services">
         </div>
         <div class="svcList" id="svcList" aria-label="Liste des services"></div>
       </div>
     </div>
   </section>
 
-  <!-- Mission / Why -->
   <section id="mission" aria-label="Ma mission">
     <div class="wrap">
       <div class="center reveal">
@@ -428,24 +424,27 @@
         </article>
         <article class="card reveal">
           <h3>Réactif et disponible</h3>
-          <p>Avant, pendant, après : je reste présent quand vous en avez besoin (et pas uniquement au moment de vendre).</p>
+          <p>Avant, pendant, après : je reste présent quand vous en avez besoin.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- About -->
   <section id="apropos" aria-label="À propos">
     <div class="wrap">
       <div class="center reveal">
-        <h2 class="sectionTitle">Je m'appelle Quentin, au plaisir !</h2>
+        <h2 class="sectionTitle">Je m'appelle Quentin, au plaisir</h2>
       </div>
 
       <div class="aboutGrid">
         <div class="aboutBox reveal">
-          <p>Courtier en assurances indépendant, <strong>j’accompagne</strong> les particuliers et les professionnels dans leurs choix d’assurance avec une approche basée sur la <strong>proximité</strong>, l’écoute et la confiance.</p>
-          <p>Indépendant par <strong>conviction</strong>, je privilégie une relation humaine pour les client, les copains ou les inconnus. Loin des démarches impersonnelles. <strong>Chaque clients</strong> bénéficie d’un accompagnement sur mesure, avant, pendant et après la mise en place de son contrat.</p>
-          <p>Passionné de <strong>sport et de voyages</strong>, j’apprécie les échanges, les rencontres et les défis. <strong>Des valeurs</strong> que je retrouve pleinement dans mon métier et dans la relation que je construis avec mes clients.</p>
+          <p>Courtier en assurances indépendant, j’accompagne les particuliers et les professionnels dans leurs choix d’assurance avec une approche basée sur la proximité, l’écoute et la confiance.</p>
+          <p>Indépendant par conviction, je privilégie une relation humaine. Chaque client bénéficie d’un accompagnement sur mesure, avant, pendant et après la mise en place de son contrat.</p>
+          <p>Passionné de sport et de voyages, j’apprécie les échanges, les rencontres et les défis. Des valeurs que je retrouve pleinement dans mon métier et dans la relation que je construis avec mes clients.</p>
+
+          <div class="oriasBadge" aria-label="Certification">
+            <img class="oriasImg" src="images/orias.png" alt="Certification ORIAS">
+          </div>
         </div>
 
         <div class="photo reveal" aria-label="Photo de Quentin">
@@ -455,7 +454,6 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
   <section id="avis" aria-label="Retours clients">
     <div class="wrap">
       <div class="center reveal">
@@ -486,7 +484,7 @@
                 </div>
               </div>
 
-              <div class="testiRight" aria-label="Source + note">
+              <div class="testiRight" aria-label="Source et note">
                 <img class="gBadge" src="images/google.png" alt="Google">
                 <div class="stars" aria-label="5 étoiles">
                   <svg viewBox="0 0 24 24"><path d="M12 17.3l-6.2 3.6 1.7-7.1L2 8.9l7.2-.6L12 1.6l2.8 6.7 7.2.6-5.5 4.9 1.7 7.1z"/></svg>
@@ -497,7 +495,7 @@
                 </div>
               </div>
             </div>
-            <p>Très clair, très réactif. J’ai compris ce que je signais et j’ai été accompagné jusqu’au bout, sans pression.</p>
+            <p>Très clair, très réactif. J’ai compris ce que je signais et j’ai été accompagné du début à la fin, sans pression.</p>
           </article>
 
           <article class="testi reveal" aria-label="Avis 2">
@@ -510,7 +508,7 @@
                 </div>
               </div>
 
-              <div class="testiRight" aria-label="Source + note">
+              <div class="testiRight" aria-label="Source et note">
                 <img class="gBadge" src="images/google.png" alt="Google">
                 <div class="stars" aria-label="5 étoiles">
                   <svg viewBox="0 0 24 24"><path d="M12 17.3l-6.2 3.6 1.7-7.1L2 8.9l7.2-.6L12 1.6l2.8 6.7 7.2.6-5.5 4.9 1.7 7.1z"/></svg>
@@ -521,7 +519,7 @@
                 </div>
               </div>
             </div>
-            <p>Accompagnement efficace pour ma RC Pro : explications simples et mise en place rapide. Je recommande.</p>
+            <p>Accompagnement efficace pour ma RC Pro. Explications simples et mise en place rapide. Je recommande.</p>
           </article>
 
           <article class="testi reveal" aria-label="Avis 3">
@@ -534,7 +532,7 @@
                 </div>
               </div>
 
-              <div class="testiRight" aria-label="Source + note">
+              <div class="testiRight" aria-label="Source et note">
                 <img class="gBadge" src="images/google.png" alt="Google">
                 <div class="stars" aria-label="5 étoiles">
                   <svg viewBox="0 0 24 24"><path d="M12 17.3l-6.2 3.6 1.7-7.1L2 8.9l7.2-.6L12 1.6l2.8 6.7 7.2.6-5.5 4.9 1.7 7.1z"/></svg>
@@ -545,24 +543,29 @@
                 </div>
               </div>
             </div>
-            <p>Très disponible et pédagogue. J’ai eu des réponses rapides et un vrai sentiment d’être accompagné.</p>
+            <p>Très disponible et pédagogue. Réponses rapides et vrai sentiment d’être accompagné.</p>
           </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEW SECTION: Projet -->
   <section id="projet" aria-label="Parlez-moi de votre projet">
     <div class="wrap">
       <div class="center reveal">
         <h2 class="sectionTitle">Parlez-moi de votre projet</h2>
-        <p class="sectionIntro">[Texte à compléter] Expliquez-moi votre situation, vos priorités, et ce que vous attendez. Je vous réponds avec une proposition claire.</p>
+        <p class="sectionIntro">Choisissez un créneau et dites moi en deux phrases ce que vous cherchez. Je reviens vers vous avec une proposition claire.</p>
+      </div>
+
+      <div class="calCard reveal" aria-label="Calendly">
+        <div class="calWrap" aria-label="Calendly intégré">
+          <iframe src="TON_LIEN_CALENDLY" title="Prise de rendez-vous"></iframe>
+        </div>
+        <p class="calNote">Si rien ne correspond, envoyez moi un message et on trouve un créneau.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="contact" aria-label="Contact">
     <div class="wrap">
       <div class="center reveal">
@@ -576,22 +579,22 @@
             <div><a href="tel:+33672491064">+33 6 72 49 10 64</a></div>
           </div>
           <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="2"/><path d="M4 6l8 7 8-7" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><a href="mailto:[À RENSEIGNER]">[À RENSEIGNER]</a></div>
+            <div><a href="mailto:TON_EMAIL">TON_EMAIL</a></div>
           </div>
           <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div>[À RENSEIGNER]</div>
+            <div>ADRESSE_A_COMPLETER</div>
           </div>
           <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="2" stroke-linecap="round"/></svg>
-            <div>Zone d’intervention : <span id="zone">[ZONE D’INTERVENTION]</span></div>
+            <div>Zone d’intervention : <span id="zone">Tarbes et alentours</span></div>
           </div>
         </div>
 
         <div class="contactCard reveal" aria-label="Actions">
           <h3>Contact rapide</h3>
-          <p style="margin:0;color:rgba(255,255,255,.82);line-height:1.7">Expliquez votre besoin en quelques lignes : je reviens vers vous avec une proposition claire, adaptée à votre profil <span id="segText">(particulier)</span>.</p>
+          <p style="margin:0;color:rgba(255,255,255,.82);line-height:1.7">Expliquez votre besoin en quelques lignes. Je reviens vers vous avec une proposition claire adaptée à votre profil <span id="segText">(particulier)</span>.</p>
 
           <div class="actions" aria-label="Boutons de contact">
-            <a class="btn btnLight" href="#contact">Prendre RDV</a>
+            <a class="btn btnLight" href="#projet">Prendre rendez-vous</a>
             <a class="btn btnOutline" href="tel:+33672491064">Appeler</a>
             <a class="btn btnOutline" href="https://wa.me/33672491064" target="_blank" rel="noopener">WhatsApp</a>
           </div>
@@ -607,7 +610,6 @@
     </div>
   </section>
 
-  <!-- Floating WhatsApp -->
   <div class="waFloat" aria-label="WhatsApp">
     <a class="waBtn" href="https://wa.me/33672491064" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
       <img class="waIcon" src="images/whatsapp.webp" alt="WhatsApp">
@@ -619,10 +621,8 @@
       const $ = (s, r=document)=>r.querySelector(s);
       const $$ = (s, r=document)=>Array.from(r.querySelectorAll(s));
 
-      // Year
       $('#year').textContent = new Date().getFullYear();
 
-      // Mobile menu
       const burger = $('#burger');
       const panel = $('#mobilePanel');
       const closePanel = ()=>{ panel.classList.remove('open'); burger.setAttribute('aria-expanded','false'); };
@@ -633,7 +633,6 @@
       panel.addEventListener('click', (e)=>{ if(e.target.matches('[data-close]')) closePanel(); });
       window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closePanel(); });
 
-      // Active nav (desktop)
       const navLinks = $$('.nav a');
       const sections = navLinks.map(a => $(a.getAttribute('href'))).filter(Boolean);
       if('IntersectionObserver' in window){
@@ -649,14 +648,12 @@
         sections.forEach(sec=>io.observe(sec));
       }
 
-      // Reveal on scroll
       const revealEls = $$('.reveal');
       const rev = new IntersectionObserver((entries)=>{
         entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); rev.unobserve(en.target); } });
       }, { threshold:0.14 });
       revealEls.forEach(el=>rev.observe(el));
 
-      // Segment toggle (particulier / pro) -> pro = thème sombre
       const segPart = $('#segPart');
       const segPro = $('#segPro');
       const segText = $('#segText');
@@ -669,21 +666,20 @@
       const SERVICES = {
         particulier: [
           { title:"Assurance emprunteur", desc:"Pour votre prêt immobilier : un contrat adapté, clair, et une mise en place accompagnée." },
-          { title:"Santé & prévoyance", desc:"Protéger votre quotidien : santé, prévoyance individuelle, garanties utiles dans la durée." },
-          { title:"Habitation", desc:"Locataire, propriétaire, PNO : des garanties ajustées, sans surpayer l’inutile." },
-          { title:"Auto / 2 roues", desc:"Tiers, tous risques : un choix simple, adapté à votre usage et votre budget." }
+          { title:"Santé et prévoyance", desc:"Protéger votre quotidien : garanties utiles et conseils simples." },
+          { title:"Habitation", desc:"Locataire, propriétaire, PNO : des garanties ajustées, sans payer l’inutile." },
+          { title:"Auto et deux roues", desc:"Tiers ou tous risques : un choix clair adapté à votre usage et votre budget." }
         ],
         pro: [
-          { title:"RC Pro", desc:"Protégez votre activité : responsabilité civile professionnelle adaptée à votre métier." },
-          { title:"Décennale", desc:"Bâtiment : une couverture sérieuse, des échanges clairs, et un suivi réel." },
-          { title:"Assurance emprunteur", desc:"Pour un financement pro : clarté sur les garanties et accompagnement sur le dossier." },
-          { title:"Multirisque pro", desc:"Locaux, matériel, équipements : une vision globale, sans angle mort." }
+          { title:"Responsabilité civile professionnelle", desc:"Protégez votre activité avec une couverture adaptée à votre métier." },
+          { title:"Décennale", desc:"Bâtiment : un contrat sérieux, des échanges clairs et un suivi réel." },
+          { title:"Assurance emprunteur", desc:"Pour un financement professionnel : clarté sur les garanties et accompagnement." },
+          { title:"Multirisque professionnelle", desc:"Locaux, matériel, équipements : une vision globale pour éviter les mauvaises surprises." }
         ]
       };
 
       function setSegment(seg){
         const isPro = seg === 'pro';
-
         document.body.setAttribute('data-theme', isPro ? 'pro' : 'particulier');
 
         segPart.setAttribute('aria-pressed', String(!isPro));
@@ -694,22 +690,19 @@
         svcTag.textContent = isPro ? 'Pour professionnels' : 'Pour particuliers';
 
         heroLead.textContent = isPro
-          ? "Vous avez une activité à protéger ? On clarifie vos obligations, on sécurise l’essentiel et on met en place un contrat solide et simplement."
-          : "L’assurance, ça peut vite devenir compliqué… alors on le fait ensemble. On prend le temps de comprendre vos besoins, on compare les solutions, et on choisit celle qui vous protège vraiment au bon prix.";
+          ? "Vous avez une activité à protéger ? On clarifie vos obligations, on sécurise l’essentiel, et on met en place un contrat solide, simplement."
+          : "L’assurance peut vite devenir compliquée, alors on le fait ensemble. On prend le temps de comprendre vos besoins, on compare les solutions, et on choisit celle qui vous protège vraiment au bon prix.";
 
         servicesIntro.textContent = isPro
-          ? "L’essentiel pour votre activité : protéger, rester conforme, et avancer sereinement."
-          : "Une sélection d’essentiels pour votre quotidien : protéger, comprendre, et être bien accompagné.";
+          ? "Pour votre activité : protéger l’essentiel, rester conforme, et avancer sereinement."
+          : "Pour votre quotidien : protéger l’essentiel, comprendre, et être bien accompagné.";
 
-        const list = SERVICES[seg].map(item => {
-          return `
-            <article class="svcItem" tabindex="0" aria-label="Service ${item.title}">
-              <h3>${item.title}</h3>
-              <p>${item.desc}</p>
-            </article>
-          `;
-        }).join('');
-        svcList.innerHTML = list;
+        svcList.innerHTML = SERVICES[seg].map(item => `
+          <article class="svcItem" tabindex="0" aria-label="Service ${item.title}">
+            <h3>${item.title}</h3>
+            <p>${item.desc}</p>
+          </article>
+        `).join('');
 
         localStorage.setItem('qd_segment', seg);
       }
@@ -717,10 +710,8 @@
       segPart.addEventListener('click', ()=>setSegment('particulier'));
       segPro.addEventListener('click', ()=>setSegment('pro'));
 
-      // Init
       const saved = localStorage.getItem('qd_segment');
       setSegment(saved === 'pro' ? 'pro' : 'particulier');
-
     })();
   </script>
 </body>
