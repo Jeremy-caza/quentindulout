@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentions légales — Quentin Dulout Courtages</title>
+  <meta name="description" content="Mentions légales du site Quentin Dulout Courtages." />
+
+  <!-- Favicons (identiques au site) -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    :root{
+      --bg:#f7fbff; --surface:#ffffff; --ink:#0b1623; --muted:#455468; --muted2:#6b7a90;
+      --line:rgba(11,22,35,.10);
+      --brand:#0e3a5a; --brand2:#0b2d45; --accent:#c7f255; --btnInk:#ffffff;
+      --headerBg:rgba(255,255,255,.86);
+      --shadow:0 18px 45px rgba(15, 35, 55, .10);
+      --shadow2:0 10px 24px rgba(15, 35, 55, .10);
+      --radius:16px; --radius2:22px;
+      --max:980px;
+      --serif: ui-serif, Georgia, "Times New Roman", Times, serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      --focus: 0 0 0 3px rgba(199,242,85,.45), 0 0 0 6px rgba(14,58,90,.18);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:var(--sans);color:var(--ink);background:linear-gradient(180deg, rgba(245,251,255,1), rgba(255,255,255,1) 55%, rgba(247,251,255,1))}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
+    /* Header simple */
+    .header{position:sticky;top:0;z-index:50;background:var(--headerBg);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);border-bottom:1px solid var(--line)}
+    .headerInner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+    .mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--accent), rgba(199,242,85,.25));display:grid;place-items:center;box-shadow:0 10px 22px rgba(14,58,90,.12);flex:0 0 auto}
+    .mark svg{width:18px;height:18px}
+    .brandName{font-weight:800;letter-spacing:-.2px;line-height:1.1}
+    .brandSub{display:block;font-size:12px;color:var(--muted2);margin-top:2px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:14px;padding:11px 14px;font-weight:800;text-decoration:none;cursor:pointer;white-space:nowrap}
+    .btnPrimary{background:var(--brand);color:var(--btnInk);box-shadow:0 12px 28px rgba(14,58,90,.22)}
+    .btnPrimary:hover{background:var(--brand2)}
+
+    /* Page */
+    main{padding:34px 0 52px}
+    h1{font-family:var(--serif);font-weight:800;letter-spacing:-.6px;line-height:1.06;font-size:46px;margin:0 0 10px}
+    .lead{color:var(--muted);line-height:1.7;margin:0 0 20px;max-width:80ch}
+
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow2);margin-top:14px}
+    .card h2{font-family:var(--serif);margin:0 0 10px;font-size:22px}
+    .card p{margin:0 0 10px;color:var(--muted);line-height:1.75}
+    .card p:last-child{margin-bottom:0}
+
+    .kv{display:grid;grid-template-columns:220px 1fr;gap:10px 14px;margin-top:10px}
+    .k{color:var(--muted2);font-weight:800}
+    .v{color:var(--ink);font-weight:650}
+    .hint{color:var(--muted2);font-style:italic}
+
+    footer{padding:22px 0 28px;border-top:1px solid var(--line)}
+    .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted)}
+    .foot a{text-decoration:underline;text-underline-offset:3px}
+
+    :focus-visible{outline:none;box-shadow:var(--focus);border-radius:14px}
+
+    @media (max-width:720px){
+      h1{font-size:38px}
+      .kv{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" aria-label="En-tête">
+    <div class="wrap">
+      <div class="headerInner">
+        <a class="brand" href="index.html" aria-label="Retour à l’accueil">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-label="Bouclier">
+              <path d="M12 2l8 4v6c0 5-3.4 9.7-8 10-4.6-.3-8-5-8-10V6l8-4zm0 2.2L6 7v5c0 4.1 2.7 7.9 6 8.8 3.3-.9 6-4.7 6-8.8V7l-6-2.8z" fill="rgba(14,58,90,.95)"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brandName">Quentin Dulout Courtages</span>
+            <span class="brandSub">Courtier en assurances</span>
+          </span>
+        </a>
+
+        <a class="btn btnPrimary" href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main aria-label="Mentions légales">
+    <div class="wrap">
+      <h1>Mentions légales</h1>
+      <p class="lead">
+        Les présentes mentions légales s’appliquent au site Quentin Dulout Courtages.
+        Certaines informations administratives seront complétées dès réception (SIRET, adresse, etc.).
+      </p>
+
+      <section class="card" aria-label="Éditeur du site">
+        <h2>Éditeur du site</h2>
+        <div class="kv" role="list">
+          <div class="k" role="listitem">Nom</div><div class="v">Quentin Dulout Courtages</div>
+          <div class="k" role="listitem">Responsable de publication</div><div class="v">Quentin Dulout</div>
+          <div class="k" role="listitem">E-mail</div><div class="v"><a href="mailto:q.dulout@360courtage.fr">q.dulout@360courtage.fr</a></div>
+          <div class="k" role="listitem">Téléphone</div><div class="v"><a href="tel:+33672491064">+33 6 72 49 10 64</a></div>
+          <div class="k" role="listitem">Adresse</div><div class="v"><span class="hint">[À RENSEIGNER]</span></div>
+          <div class="k" role="listitem">SIRET</div><div class="v"><span class="hint">[À RENSEIGNER]</span></div>
+          <div class="k" role="listitem">RCS / RM</div><div class="v"><span class="hint">[À RENSEIGNER]</span></div>
+          <div class="k" role="listitem">TVA intracommunautaire</div><div class="v"><span class="hint">[À RENSEIGNER SI APPLICABLE]</span></div>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Activité et immatriculation ORIAS">
+        <h2>Activité de courtage et ORIAS</h2>
+        <p>
+          Quentin Dulout Courtages exerce une activité de courtage en assurances. Le courtier intervient en tant
+          qu’intermédiaire entre le client et les organismes assureurs afin de proposer des solutions adaptées.
+        </p>
+        <div class="kv" role="list">
+          <div class="k" role="listitem">Immatriculation ORIAS</div><div class="v"><span class="hint">[NUMÉRO ORIAS À RENSEIGNER]</span></div>
+          <div class="k" role="listitem">Lien ORIAS</div><div class="v"><span class="hint">[LIEN À RENSEIGNER]</span></div>
+        </div>
+        <p class="hint" style="margin-top:10px">
+          Astuce : ajoute ici le numéro ORIAS dès que tu l’as, c’est rassurant et attendu sur ce type de site.
+        </p>
+      </section>
+
+      <section class="card" aria-label="Hébergement">
+        <h2>Hébergement</h2>
+        <div class="kv" role="list">
+          <div class="k" role="listitem">Hébergeur</div><div class="v">GitHub Pages</div>
+          <div class="k" role="listitem">Adresse</div><div class="v">GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, USA</div>
+          <div class="k" role="listitem">Site</div><div class="v"><span class="hint">[URL DU SITE À RENSEIGNER]</span></div>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Propriété intellectuelle">
+        <h2>Propriété intellectuelle</h2>
+        <p>
+          Sauf mention contraire, l’ensemble des contenus du site (textes, visuels, logos, éléments graphiques)
+          est protégé par le droit d’auteur et reste la propriété de Quentin Dulout Courtages ou de ses partenaires.
+          Toute reproduction, représentation, adaptation ou diffusion, même partielle, est interdite sans autorisation préalable.
+        </p>
+      </section>
+
+      <section class="card" aria-label="Responsabilité">
+        <h2>Responsabilité</h2>
+        <p>
+          Les informations présentées sur ce site sont fournies à titre informatif. Malgré le soin apporté à leur mise à jour,
+          Quentin Dulout Courtages ne peut garantir l’exactitude ou l’exhaustivité des informations à tout moment.
+          L’utilisateur reste responsable de l’usage qu’il fait des informations et des contenus.
+        </p>
+      </section>
+
+      <section class="card" aria-label="Données personnelles">
+        <h2>Données personnelles</h2>
+        <p>
+          Le site peut permettre une prise de contact (téléphone, e-mail, messagerie, prise de rendez-vous). Les informations
+          transmises par l’utilisateur sont utilisées uniquement pour répondre à la demande et assurer le suivi de la relation.
+        </p>
+        <div class="kv" role="list">
+          <div class="k" role="listitem">Responsable du traitement</div><div class="v">Quentin Dulout Courtages</div>
+          <div class="k" role="listitem">Contact</div><div class="v"><a href="mailto:q.dulout@360courtage.fr">q.dulout@360courtage.fr</a></div>
+        </div>
+        <p style="margin-top:10px">
+          Conformément à la réglementation applicable, vous pouvez demander l’accès, la rectification ou la suppression de vos données
+          en écrivant à l’adresse e-mail ci-dessus.
+        </p>
+      </section>
+
+      <section class="card" aria-label="Cookies">
+        <h2>Cookies</h2>
+        <p>
+          Le site peut utiliser des cookies ou technologies similaires pour améliorer l’expérience utilisateur et mesurer l’audience.
+          <span class="hint">[À préciser si tu ajoutes Google Analytics, Pixel, etc.]</span>
+        </p>
+      </section>
+
+      <section class="card" aria-label="Liens externes">
+        <h2>Liens externes</h2>
+        <p>
+          Le site peut contenir des liens vers des sites tiers (exemple : prise de rendez-vous, réseaux, carte). Quentin Dulout Courtages
+          n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
+        </p>
+      </section>
+
+      <section class="card" aria-label="Médiation et réclamations">
+        <h2>Réclamations et médiation</h2>
+        <p>
+          <span class="hint">[À compléter selon ta procédure de réclamation et l’organisme de médiation, si applicable.]</span>
+        </p>
+        <div class="kv" role="list">
+          <div class="k" role="listitem">Procédure de réclamation</div><div class="v"><span class="hint">[À RENSEIGNER]</span></div>
+          <div class="k" role="listitem">Médiateur</div><div class="v"><span class="hint">[À RENSEIGNER SI APPLICABLE]</span></div>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Contact">
+        <h2>Contact</h2>
+        <p>
+          Pour toute question, vous pouvez contacter Quentin Dulout Courtages :
+          <br><strong>Téléphone :</strong> <a href="tel:+33672491064">+33 6 72 49 10 64</a>
+          <br><strong>E-mail :</strong> <a href="mailto:q.dulout@360courtage.fr">q.dulout@360courtage.fr</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer aria-label="Pied de page">
+    <div class="wrap">
+      <div class="foot">
+        <span>© <span id="year"></span> Quentin Dulout Courtages</span>
+        <span><a href="index.html">Retour au site</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
