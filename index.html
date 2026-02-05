@@ -315,6 +315,35 @@ body[data-theme="pro"] .oriasMini img{filter:drop-shadow(0 10px 18px rgba(0,0,0,
       html{scroll-behavior:auto}
       .reveal{transition:none}
       .svcItem, .btn{transition:none}}
+
+    /* ===== Watermark logo sur TOUTES les images (auto-wrap via JS) ===== */
+.wmWrap{position:relative;display:inline-block;max-width:100%}
+.wmWrap>img{display:block;width:100%;height:auto}
+.wmMark{position:absolute;right:10px;bottom:10px;z-index:2;pointer-events:none;opacity:.42;transform:translateZ(0)}
+.wmMark img{width:58px;height:auto;display:block;object-fit:contain}
+.wmPill{position:absolute;right:6px;bottom:6px;z-index:1;pointer-events:none;width:74px;height:38px;border-radius:14px;background:rgba(255,255,255,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(11,22,35,.10)}
+body[data-theme="pro"] .wmPill{background:rgba(15,27,44,.45);border-color:rgba(255,255,255,.12)}
+
+@media (max-width:760px){
+  .wmMark{right:8px;bottom:8px;opacity:.40}
+  .wmMark img{width:52px}
+  .wmPill{right:5px;bottom:5px;width:68px;height:36px}}
+
+    /* ===== Opportunité du moment ===== */
+.oppCard{max-width:980px;margin:28px auto 0;background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:22px}
+.oppTop{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.oppTitle{font-family:var(--serif);font-size:24px}
+.oppTag{font-size:13px;color:var(--muted);background:rgba(11,22,35,.04);border:1px solid var(--line);padding:8px 12px;border-radius:999px}
+body[data-theme="pro"] .oppTag{background:rgba(255,255,255,.06)}
+.oppText{margin:14px 0 0;color:var(--muted);line-height:1.75}
+.oppList{margin:16px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.oppList li{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(11,22,35,.03);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
+.oppList li span:first-child{color:var(--muted);font-weight:700}
+.oppList li span:last-child{color:var(--ink);font-weight:750}
+.oppCta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+@media (max-width:760px){.oppList{grid-template-columns:1fr}}
+
     
     <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 
@@ -444,7 +473,7 @@ body[data-theme="pro"] .oriasMini img{filter:drop-shadow(0 10px 18px rgba(0,0,0,
   <section id="apropos" aria-label="À propos">
     <div class="wrap">
       <div class="center reveal">
-        <h2 class="sectionTitle">Je m'appelle Quentin, au plaisir</h2>
+        <h2 class="sectionTitle">Je m'appelle Quentin, enchanté.</h2>
       </div>
 
       <div class="aboutGrid">
@@ -576,6 +605,40 @@ body[data-theme="pro"] .oriasMini img{filter:drop-shadow(0 10px 18px rgba(0,0,0,
       </div>
     </div>
   </section>
+
+  <section id="opportunite" aria-label="Opportunité du moment">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2 class="sectionTitle">Opportunité du moment</h2>
+      <p class="sectionIntro">Offres ponctuelles proposées par certaines compagnies (capacité limitée). Quand c’est rempli, c’est fermé.</p>
+    </div>
+
+    <div class="oppCard reveal" aria-label="Encadré opportunité">
+      <div class="oppTop">
+        <b class="oppTitle">Enveloppe du moment</b>
+        <span class="oppTag">Mise à jour trimestrielle</span>
+      </div>
+
+      <p class="oppText"><b>Rien de proposé pour le moment.</b><br>Quand une enveloppe est disponible, je l’affiche ici avec les infos utiles.</p>
+
+      <!-- Zone rapide à modifier -->
+      <ul class="oppList" aria-label="Détails">
+        <li><span>Compagnie</span><span>—</span></li>
+        <li><span>Montant min / max</span><span>—</span></li>
+        <li><span>Capacité globale</span><span>—</span></li>
+        <li><span>Support / indice</span><span>—</span></li>
+        <li><span>Date d’ouverture</span><span>—</span></li>
+        <li><span>Date de fermeture</span><span>—</span></li>
+      </ul>
+
+      <div class="oppCta">
+        <a class="btn btnPrimary" href="#projet">Vérifier si je suis éligible</a>
+        <a class="btn btnGhost" href="#contact">Me contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <section id="contact" class="contact" aria-label="Contact">
     <div class="wrap">
@@ -725,6 +788,35 @@ body[data-theme="pro"] .oriasMini img{filter:drop-shadow(0 10px 18px rgba(0,0,0,
 
       const saved = localStorage.getItem('qd_segment');
       setSegment(saved === 'pro' ? 'pro' : 'particulier');
+
+      // Watermark automatique sur les images (sauf icônes/logos UI)
+(function addWatermarks(){
+  const exclude = [
+    '.brandLogo','.gBadge','.verified','.waIcon',
+    '.oriasImg','.oriasMini img'
+  ];
+  const isExcluded = (img)=> exclude.some(sel => img.matches(sel));
+
+  document.querySelectorAll('main img, section img').forEach(img=>{
+    if(isExcluded(img)) return;
+    if(img.closest('.wmWrap')) return;
+
+    const wrap = document.createElement('span');
+    wrap.className = 'wmWrap';
+
+    const pill = document.createElement('span');
+    pill.className = 'wmPill';
+
+    const mark = document.createElement('span');
+    mark.className = 'wmMark';
+    mark.innerHTML = `<img src="images/logo entier.jpeg" alt="" aria-hidden="true">`;
+
+    img.parentNode.insertBefore(wrap, img);
+    wrap.appendChild(img);
+    wrap.appendChild(pill);
+    wrap.appendChild(mark);
+  });
+})();
     })();
   </script>
 </body>
