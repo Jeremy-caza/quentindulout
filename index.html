@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Quentin Dulout Courtages | Courtier en assurances à Tarbes</title>
+  <title>Quentin Dulout Courtage | Courtier en assurances à Tarbes</title>
   <meta name="description" content="Courtier en assurances à Tarbes. Particuliers et professionnels. Assurance emprunteur, santé, prévoyance, auto, habitation, RC Pro, décennale, multirisque. Conseil clair et accompagnement humain." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#0e3a5a" />
@@ -96,14 +96,14 @@
 
     /* Header */
     .header{position:sticky;top:0;z-index:50;background:var(--headerBg);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);border-bottom:1px solid var(--line)}
-    .headerInner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:78px}
+    .headerInner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:84px}
     .brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;flex:1 1 auto}
     .brandText{min-width:0}
     .brandLine{display:flex;align-items:center;gap:10px;min-width:0}
-    .brandLogo{width:22px;height:22px;border-radius:6px;object-fit:cover;border:1px solid rgba(11,22,35,.10)}
-    body[data-theme="pro"] .brandLogo{border-color:rgba(255,255,255,.16)}
+   .brandLogo{width:34px;height:34px;border-radius:10px;object-fit:contain;background:#fff;padding:3px;border:1px solid rgba(11,22,35,.10);flex:0 0 auto}body[data-theme="pro"] .brandLogo{border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.06)}
     .mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--accent), rgba(199,242,85,.25));display:grid;place-items:center;box-shadow:0 10px 22px rgba(14,58,90,.12);flex:0 0 auto}
-    body[data-theme="pro"] .mark{box-shadow:0 12px 24px rgba(0,0,0,.28)}
+    body[data-theme="pro"] 
+    .mark{box-shadow:0 12px 24px rgba(0,0,0,.28)}
     .mark svg{width:18px;height:18px}
     .brandName{font-weight:750;letter-spacing:-.2px;line-height:1.1;white-space:normal}
     .brandSub{display:block;font-size:12px;color:var(--muted2);margin-top:2px}
@@ -141,6 +141,10 @@
     /* IMPORTANT : cache le menu mobile en desktop */
     .mobilePanel{display:none}
     .mobilePanel.open{display:block}
+    /* Mobile : on agrandit aussi mais un peu moins */
+@media (max-width:780px){
+  .headerInner{min-height:78px}
+  .brandLogo{width:30px;height:30px;border-radius:9px;padding:3px}}
 
     /* Hero */
     .hero{padding:34px 0 30px}
