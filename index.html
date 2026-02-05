@@ -11,7 +11,7 @@
   <link rel="canonical" href="TON_URL_CANONIQUE" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Quentin Dulout Courtages | Courtier en assurances à Tarbes" />
+  <meta property="og:title" content="Quentin Dulout Courtage | Courtier en assurances à Tarbes" />
   <meta property="og:description" content="Courtier en assurances à Tarbes. Particuliers et professionnels. Conseil clair et accompagnement humain." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
@@ -20,7 +20,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Quentin Dulout Courtages | Courtier en assurances à Tarbes" />
+  <meta name="twitter:title" content="Quentin Dulout Courtage | Courtier en assurances à Tarbes" />
   <meta name="twitter:description" content="Courtier en assurances à Tarbes. Particuliers et professionnels. Conseil clair et accompagnement humain." />
   <meta name="twitter:image" content="TON_URL_OG_IMAGE" />
 
@@ -32,7 +32,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#0e3a5a">
-  <meta name="application-name" content="Quentin Dulout Courtages">
+  <meta name="application-name" content="Quentin Dulout Courtage">
 
   <!-- Local SEO -->
   <meta name="geo.region" content="FR-65" />
@@ -42,7 +42,7 @@
   {
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
-    "name": "Quentin Dulout Courtages",
+    "name": "Quentin Dulout Courtage",
     "telephone": "+33672491064",
     "email": "q.dulout@360courtage.fr",
     "url": "TON_URL_CANONIQUE",
@@ -316,18 +316,16 @@ body[data-theme="pro"] .oriasMini img{filter:drop-shadow(0 10px 18px rgba(0,0,0,
       .reveal{transition:none}
       .svcItem, .btn{transition:none}}
 
-    /* ===== Watermark logo sur TOUTES les images (auto-wrap via JS) ===== */
-.wmWrap{position:relative;display:inline-block;max-width:100%}
-.wmWrap>img{display:block;width:100%;height:auto}
-.wmMark{position:absolute;right:10px;bottom:10px;z-index:2;pointer-events:none;opacity:.42;transform:translateZ(0)}
-.wmMark img{width:58px;height:auto;display:block;object-fit:contain}
-.wmPill{position:absolute;right:6px;bottom:6px;z-index:1;pointer-events:none;width:74px;height:38px;border-radius:14px;background:rgba(255,255,255,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(11,22,35,.10)}
-body[data-theme="pro"] .wmPill{background:rgba(15,27,44,.45);border-color:rgba(255,255,255,.12)}
+    /* ===== Logo overlay dans les cadres d’images (sans toucher aux img) ===== */
+.imgLogo{position:absolute;right:14px;bottom:14px;z-index:6;pointer-events:none;opacity:.42}
+.imgLogo img{width:64px;height:auto;display:block;object-fit:contain;filter:drop-shadow(0 6px 14px rgba(0,0,0,.18))}
+.imgLogoBg{position:absolute;right:10px;bottom:10px;z-index:5;pointer-events:none;width:86px;height:46px;border-radius:16px;background:rgba(255,255,255,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(11,22,35,.10)}
+body[data-theme="pro"] .imgLogoBg{background:rgba(15,27,44,.45);border-color:rgba(255,255,255,.12)}
 
 @media (max-width:760px){
-  .wmMark{right:8px;bottom:8px;opacity:.40}
-  .wmMark img{width:52px}
-  .wmPill{right:5px;bottom:5px;width:68px;height:36px}}
+  .imgLogo{right:10px;bottom:10px;opacity:.40}
+  .imgLogo img{width:56px}
+  .imgLogoBg{right:7px;bottom:7px;width:76px;height:42px}}
 
     /* ===== Opportunité du moment ===== */
 .oppCard{max-width:980px;margin:28px auto 0;background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:22px}
@@ -359,8 +357,8 @@ body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
 
           <span class="brandText">
             <span class="brandLine">
-              <img class="brandLogo" src="images/logo.jpeg" alt="Logo Quentin Dulout Courtages">
-              <span class="brandName">Quentin Dulout <wbr> Courtages</span>
+              <img class="brandLogo" src="images/logo.jpeg" alt="Logo Quentin Dulout Courtage">
+              <span class="brandName">Quentin Dulout <wbr> Courtage</span>
             </span>
             <span class="brandSub">Courtier en assurances à Tarbes</span>
           </span>
@@ -408,9 +406,11 @@ body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
   <main id="accueil" class="hero" aria-label="Accueil">
     <div class="wrap">
       <div class="heroGrid">
-        <div class="photo reveal" aria-label="Photo">
-          <img class="photoImg" src="images/quentin.jpeg" alt="Photo de Quentin">
-        </div>
+      <div class="photo reveal" aria-label="Photo">
+  <img class="photoImg" src="images/quentin.jpeg" alt="Photo de Quentin">
+  <span class="imgLogoBg" aria-hidden="true"></span>
+  <span class="imgLogo" aria-hidden="true"><img src="images/logo entier.jpeg" alt=""></span>
+</div>
 
         <div class="reveal">
           <div class="kicker"><span class="dot" aria-hidden="true"></span><span id="kicker">Particuliers et professionnels</span></div>
@@ -434,9 +434,12 @@ body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
 
       <div class="servicesGrid">
         <div class="svcImg reveal" aria-label="Illustration">
-          <div class="tag" id="svcTag">Pour particuliers</div>
-          <img class="svcPhoto" src="images/service.avif" alt="Illustration de la section services">
-        </div>
+  <div class="tag" id="svcTag">Pour particuliers</div>
+  <img class="svcPhoto" src="images/service.avif" alt="Illustration de la section services">
+  <span class="imgLogoBg" aria-hidden="true"></span>
+  <span class="imgLogo" aria-hidden="true"><img src="images/logo entier.jpeg" alt=""></span>
+</div>
+
         <div class="svcList" id="svcList" aria-label="Liste des services"></div>
       </div>
     </div>
@@ -486,9 +489,11 @@ body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
 </div>
         </div>
 
-        <div class="photo reveal" aria-label="Photo de Quentin">
-          <img class="photoImg" src="images/apropos.jpg" alt="Photo de Quentin">
-        </div>
+       <div class="photo reveal" aria-label="Photo de Quentin">
+  <img class="photoImg" src="images/apropos.jpg" alt="Photo de Quentin">
+  <span class="imgLogoBg" aria-hidden="true"></span>
+  <span class="imgLogo" aria-hidden="true"><img src="images/logo entier.jpeg" alt=""></span>
+</div>
       </div>
     </div>
   </section>
@@ -610,16 +615,14 @@ body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
   <div class="wrap">
     <div class="center reveal">
       <h2 class="sectionTitle">Opportunité du moment</h2>
-      <p class="sectionIntro">Offres ponctuelles proposées par certaines compagnies (capacité limitée). Quand c’est rempli, c’est fermé.</p>
     </div>
 
     <div class="oppCard reveal" aria-label="Encadré opportunité">
       <div class="oppTop">
-        <b class="oppTitle">Enveloppe du moment</b>
-        <span class="oppTag">Mise à jour trimestrielle</span>
+        <b class="oppTitle">Investissement du moment</b>
       </div>
 
-      <p class="oppText"><b>Rien de proposé pour le moment.</b><br>Quand une enveloppe est disponible, je l’affiche ici avec les infos utiles.</p>
+      <p class="oppText"><b>Rien de proposé pour le moment.</b><br></p>
 
       <!-- Zone rapide à modifier -->
       <ul class="oppList" aria-label="Détails">
@@ -675,7 +678,7 @@ body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
      <footer aria-label="Pied de page">
   <div class="foot">
     <span>
-      © <span id="year"></span> Quentin Dulout Courtages
+      © <span id="year"></span> Quentin Dulout Courtage
       <span style="opacity:.85">• Réalisé par </span>
       <a href="https://www.cazacomm.fr" target="_blank" rel="noopener">CAZA COMM</a>
     </span>
@@ -788,35 +791,6 @@ body[data-theme="pro"] .oppList li{background:rgba(255,255,255,.05)}
 
       const saved = localStorage.getItem('qd_segment');
       setSegment(saved === 'pro' ? 'pro' : 'particulier');
-
-      // Watermark automatique sur les images (sauf icônes/logos UI)
-(function addWatermarks(){
-  const exclude = [
-    '.brandLogo','.gBadge','.verified','.waIcon',
-    '.oriasImg','.oriasMini img'
-  ];
-  const isExcluded = (img)=> exclude.some(sel => img.matches(sel));
-
-  document.querySelectorAll('main img, section img').forEach(img=>{
-    if(isExcluded(img)) return;
-    if(img.closest('.wmWrap')) return;
-
-    const wrap = document.createElement('span');
-    wrap.className = 'wmWrap';
-
-    const pill = document.createElement('span');
-    pill.className = 'wmPill';
-
-    const mark = document.createElement('span');
-    mark.className = 'wmMark';
-    mark.innerHTML = `<img src="images/logo entier.jpeg" alt="" aria-hidden="true">`;
-
-    img.parentNode.insertBefore(wrap, img);
-    wrap.appendChild(img);
-    wrap.appendChild(pill);
-    wrap.appendChild(mark);
-  });
-})();
     })();
   </script>
 </body>
